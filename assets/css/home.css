@@ -129,7 +129,7 @@ aside{
     position: fixed;
     background-color: white;
     bottom: 0;
-    /* left: -200px; */
+    left: -200px;
     z-index: 5;
 }
 
@@ -179,7 +179,7 @@ aside .add-slc img{
     border-left: 1px solid #cecece;
     background-color: white;
     position: fixed;
-    right: 0px;
+    right: -600px;
     bottom:0;
     z-index: 5;
 }
@@ -425,17 +425,22 @@ section .coffee-menus .card-product .detail-prod .addtocart h2{
 
     aside{
         display: flex;
-        flex-direction: row;
-        height: 200px;
+        /* flex-direction: column; */
+        height: auto;
         width: 100%;
         box-shadow: 10px 0 5px -5px rgba(0, 0, 0, 0.1);
         position: fixed;
-        background-color: rgb(221, 157, 157);
+        background-color: rgb(255, 255, 255);
         top: 7.3%;
         left: 0px;
+        bottom: unset;
         z-index: 5;
     }
-    
+    .wrap-menus{
+        display: flex;
+    }
+
+
     aside .menu-slc{
         display: flex;
         width: 100%;
@@ -475,6 +480,58 @@ section .coffee-menus .card-product .detail-prod .addtocart h2{
 
     aside .search-slc{
         display: flex;
+        margin-bottom: 10px;
+    }
+    .search-slc input{
+        width: 100%;
+        margin: 0 15px;
+        padding: 15px 15px 15px 50px ;
+        background-image: url('../../img/icon/search.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6px;
+        border: none ;
+        border-bottom: 2px solid black;
+        outline: none;
+        font-size: 30px;
     }
     
+
+
+
+
+    .side-cart{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 92%;
+        border-left: 1px solid #cecece;
+        background-color: white;
+        position: fixed;
+        right: -1000px;
+        bottom:0;
+        z-index: 7;
+    }
+    
+    .side-cart .empty-cart{
+        height: 500px;
+        width: 100%;
+        /* background-color: rgb(38, 112, 106); */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .side-cart .empty-cart img{
+        width: 300px;
+        height: 300px;
+    }
+    .side-cart .empty-cart h2{
+        font-size: 30px;
+    }
+    .side-cart .empty-cart p{
+        font-size: 20px;
+        color: #CECECE;
+    }
 }
